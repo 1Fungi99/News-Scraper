@@ -1,1 +1,11 @@
-<h1>Example App: Home</h1>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h2 class="header text-center">News Scraper</h2>
+        <button class="scrape">Scrape</button>
+    </div>
+    <div class="container ">
+        {{#each articles}}
+        {{> card/article}}
+        {{/each}}
+    </div>
+</div>
